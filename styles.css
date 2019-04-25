@@ -1,48 +1,45 @@
 /* GLOBAL STYLES */
 body {
   background-repeat: no-repeat;
-  background-size: 1172px 600px;
-  display: flex;
+  background-size: 100% 80%;
+  display: inline-block;
   background-image:url("my.jpg");
-  background-position-x: 5px;
-  background-position-y: 5px;  
-  padding-top: 5em;
   /*justify-content: center;*/
 }
 .footer
 {
-  background-color: yellow;
+  width: 10%;
+  height: 10%;
   position: relative;
-  top: 300px;
-  left: -1200px;
+  left: 50%;
+  background-color: white;
 }
-#fb
+#fb,#git
 {
-  position: absolute;
-  left: 100px;
-  top:250px;
-  width: 30px;
-  height: 30px;
+  width: 20%;
+  height: 20%;
   cursor: pointer;
+  transition: 1.0s;
 }
-#git
+#git:hover,#fb:hover
 {
-  position: absolute;
-left: 100px;
-  top:300px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+width: 30%;
+height: 30%;
+}
+#pos1:hover,#pos2:hover,#pos3:hover,.button:hover
+{
+  color: rgb(120, 255, 58);
+  width: 10%;
+  border-color: coral;
 }
 #on
 {
-    position: absolute;
-    left: 800px;
-    top: 50px;
+  position: relative;
+  left: 70%;
 }
 .button
 {
-    height: 18px;
+    height: 10%;
     background-color: transparent;
     border: 2px solid white;
     color: white;
@@ -50,51 +47,54 @@ left: 100px;
     font-family: monospace;
     cursor: pointer;
     opacity: 1.0;
+    border:2px solid white;
+    border-radius :10px;
+    margin:6px;
+    text-align: center;
+    transition: 1.0s;
+}
+.typewriter h1:hover,.typewriter h2:hover,.typewriter h3:hover
+{
+    color: coral;  
+}
+#tag:hover
+{
+  color: yellow;
 }
 #mypic
 {
-  position: absolute;
-  left: -500px;
-  top: 30px;
-  height: 100%;
-  width: 90%;
+  position: relative;
+  left: 70%;
+  width: 30%;
+  min-height: 90%;
+  border-radius: 50%;
+  transition: 1.0s; 
 }
-#pos1
+#mypic:hover
 {
-    position: absolute;
-    left: 25px;
-}
-#pos2
-{
-    position: absolute;
-    left: 125px;
-}
-#pos3
-{
-    position: absolute;
-    left: 225px;
-    width: 125px;
+  border-radius: 45%;
 }
 #tag
 {
-  color: white;
   position: relative;
+  left: 40%;
+  top: 30px;
+  color: white;
   width: 100%;
-  top: 200px;
-  left:800px;
+  transition: 2.0s;
 }
 #about
 {
   color: black;
   position: relative;
-  top: 500px;
-  width: 90%;
+  top: 110px;
+  font-family: 'Courier New', Courier, monospace;
 }
 /* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  position:absolute;
-  left: 800px;
-  top: 125px;  
+.typewriter h1,h2,h3 {
+  transition: 1.0s;
+  position: relative;
+  left: 40%;
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -103,38 +103,8 @@ left: 100px;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 3.5s steps(30,end),
     blink-caret .5s step-end;
-}
-.typewriter h3 {
-  position: absolute;
-  left: 800px;
-  top: 100px;  
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end;
-}
-.typewriter h2 {
-  position:absolute;
-  left: 800px;
-  top: 200px;  
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret 1.5s step-end;
 }
 /* The typing effect */
 @keyframes typing {
