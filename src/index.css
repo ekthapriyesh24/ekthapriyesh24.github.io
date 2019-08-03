@@ -1,14 +1,34 @@
 html {
   scroll-behavior: smooth;
  }
-body {
+body ,html{
+  height: 100%;
   text-align: center;
+}
+.yatra{
   font-family: 'Yatra One', cursive;
+}
+.ham{
+  font-family: 'Hammersmith One', cursive;
+}
+.audio{
+  font-family: 'Audiowide', cursive;
+}
+.arna{
+  font-family: 'Archivo Narrow',cursive;
+}
+.bst{
+      font-family: 'Bad Script';
+}
+.b612{
+  font-family: 'B612 Mono';
 }
 #root{
   background: url("back5.jpg");
   background-repeat:no-repeat; 
-  background-size:100% 100%;
+  background-size:cover;
+  height: 100%;
+  background-position: center;
 }
 *{
   transition-duration: 1s;
@@ -32,17 +52,6 @@ body {
   }
 }
 @media only screen and (max-width: 800px) {
-  body {
-    background-size: cover;
-  }
-  .colmen
-  {
-    display: none;
-  }
-  .nvd
-  {
-    display: none;
-  }
   .s1{
     font-size: 20px;
   }
@@ -93,13 +102,12 @@ body {
   border-style:solid;
   border-color: rgb(219,68,55) rgb(9, 66, 158) rgb(244,160,0) rgb(15,157,88); 
 }
-.but:hover
+.or0:hover
 {
   font-size: 20px;
 }
-.but
+.or0
 {
-  color: white;
   transition-property: font-size;
 }
 #dropcontainer
@@ -111,11 +119,7 @@ body {
   color: white;
     font-size: 2em;
 }
-.dropdownmenu
-{
-  display: none;
-}
 .atext
 {
-  color: white;
+  color: black;
 }

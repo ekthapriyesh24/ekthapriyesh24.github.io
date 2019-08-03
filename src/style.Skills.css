@@ -1,0 +1,119 @@
+.skin{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 160px;
+    height: 160px;
+}
+.spd
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 6px solid transparent;
+    background-repeat:no-repeat; 
+    background-size:100% 100%,50% 50%,50% 50%,50% 50%,50% 50%;
+    background-position: center center,left top,right top,right bottom,left bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+}
+.spd1
+{
+    position: absolute;
+}
+#spinoff
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(rgb(248, 133, 123) 100%,blue),
+                     linear-gradient(rgb(219,68,55) 100%,blue),
+                     linear-gradient(rgb(219,68,55) 100%,blue),
+                     linear-gradient(rgb(248, 133, 123) 100%,blue);
+}
+#spinoff1
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(transparent 100%,blue),
+                     linear-gradient(rgb(219,68,55) 100%,blue),
+                     linear-gradient(rgb(219,68,55) 100%,blue),
+                     linear-gradient(transparent 100%,blue);
+    transform: rotate(92deg);
+    z-index: 10;
+}
+#spinoff1>img{
+    transform: rotate(-92deg);
+}
+#spinoff3>img{
+    transform: rotate(-20deg);
+}
+#spinoff5>img{
+    transform: rotate(-45deg);
+}
+#spinoff7>img{
+    transform: rotate(-10deg);
+}
+#spinoff2
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(rgb(247, 201, 115) 100%,blue),
+                     linear-gradient(rgb(244,160,0) 100%,blue),
+                     linear-gradient(rgb(244,160,0) 100%,blue),
+                     linear-gradient(rgb(247, 201, 115) 100%,blue);
+}
+#spinoff3
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(transparent 100%,blue),
+                     linear-gradient(rgb(244,160,0) 100%,blue),
+                     linear-gradient(rgb(244,160,0) 100%,blue),
+                     linear-gradient(transparent 100%,blue);
+    transform: rotate(20deg);
+    z-index: 10;
+}
+#spinoff4
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(rgb(138, 180, 248) 100%,blue),
+                     linear-gradient(rgb(66,133,244) 100%,blue),
+                     linear-gradient(rgb(138, 180, 248) 100%,blue),
+                     linear-gradient(rgb(138, 180, 248) 100%,blue);
+}
+#spinoff5
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(transparent 100%,blue),
+                     linear-gradient(rgb(66,133,244) 100%,blue),
+                     linear-gradient(rgb(138, 180, 248) 100%,blue),
+                     linear-gradient(rgb(138, 180, 248) 100%,blue);
+    transform: rotate(45deg);
+    z-index: 10;
+}
+#spinoff6
+{
+    background-image:linear-gradient(white ,white),
+                     linear-gradient(rgb(142, 230, 187) 100%,blue),
+                     linear-gradient(rgb(15,157,88) 100%,blue),
+                     linear-gradient(rgb(142, 230, 187) 100%,blue),
+                     linear-gradient(rgb(142, 230, 187) 100%,blue);
+}
+#spinoff7
+{
+    background-image:linear-gradient(white,white),
+                     linear-gradient(transparent 100%,blue),
+                     linear-gradient(rgb(15,157,88) 100%,blue),
+                     linear-gradient(rgb(142, 230, 187) 100%,blue),
+                     linear-gradient(rgb(142, 230, 187) 100%,blue);
+    transform: rotate(10deg);
+    z-index: 10;
+}
+@media only screen and (min-width: 801px) {
+    .bar
+    {
+        display: none;
+    }
+}
+  @media only screen and (max-width: 800px) {
+    .skin
+    {
+        display: none;
+    }
+  }

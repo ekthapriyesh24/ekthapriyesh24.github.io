@@ -1,8 +1,5 @@
-import ReactBootstrapCarousel from "react-bootstrap-carousel";
-import "bootstrap/dist/css/bootstrap.css";
-import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import $ from 'jquery';
-import Popper from 'popper.js';
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -15,28 +12,43 @@ import Contact from './Contact';
 import Breaker from './Breaker';
 import Load from './Load';
 import * as serviceWorker from './serviceWorker';
-$( document ).ready(function() {
+var ctr=1;
+$(document).ready(function() {
     $("#root6").fadeOut(3200);
+    $(".or0").css("color", "white");        
     $(".menubutton").click(function(){
-        $(".dropdownmenu").slideToggle(500);        
         $(".dropdownmenu").css("background-color","white");
     }
       );
 if ( $(window).width() <= 801 ) {
-    $(".colmen").css("display","none");            
+    $(".bart").css("display","none");            
     }
-});
 $('a[href^="#"]').on('click',function (e) {
+    ctr++;
     // e.preventDefault();
-
     var target = this.hash,
     $target = $(target);
-
    $('html, body').stop().animate({
      'scrollTop': $target.offset().top-70
     }, 900, 'swing', function () {
      window.location.hash = target;
     });
+    //$('#dpdmenu').collapse({
+      //  toggle: false
+      //})
+      if(ctr%2===0)
+      $('#dpdmenu').toggleClass('show');
+});
+window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    console.log(scroll);
+    if(scroll >= 3952 && scroll <= 4475)
+    {
+    $("#fgfg4").css("color", "rgb(94, 252, 32)");
+    }
+    else{
+    $("#fgfg4").css("color", "black");
+    }
 });
 $(window).scroll(function() {
     if($(window).scrollTop() > 20) {
@@ -53,24 +65,24 @@ $(window).scroll(function() {
         $("#dropcontainer").css("border-bottom","0.5px solid black");        
         $(".dropdownmenu").css("background-color","white");
         $(".menubutton").css("color","black");
-        $("a").css("color","black");
     } else {
         $("#dropcontainer").css("background-color","transparent");
         $("#dropcontainer").css("border-bottom","0.5px solid transparent");        
         $(".dropdownmenu").css("background-color","white");
         $(".menubutton").css("color","white");
-        $("a").css("color","black");
     }
 });
-$(".but").hover(function () {
+$(".or0").hover(function () {
     $(this).css("color","orange");
     },function () {
         if($(window).scrollTop() < 20) {
             $(this).css("color","white");
+            $(".fgfgf").css("color","rgb(94, 252, 32)");
         }
         else
         {
             $(this).css("color","black");
+            $(".fgfgf").css("color","black");
         }
         }    
    );
@@ -90,6 +102,7 @@ $(".bart").hover(function () {
    });
    $("#root").mouseout(function (){
     $(".or0").css("color", "black");
+    $(".fgfgf").css("color", "black");
     $(".bart").css("background-color","white");    
     $(".bart").css("borderBottom","1px solid grey");    
    });
@@ -123,7 +136,6 @@ $(".bart").hover(function () {
    $("#root5").mouseout(function () {
     $("#fgfg5").css("color", "black");
    });
-
 ReactDOM.render(<Home/>, document.getElementById('root'));
 ReactDOM.render(<Breaker mm="50px"/>, document.getElementById('root11'));
 ReactDOM.render(<About/>, document.getElementById('root1'));
@@ -133,9 +145,14 @@ ReactDOM.render(<Breaker mm="50px"/>, document.getElementById('root31'));
 ReactDOM.render(<Projects/>, document.getElementById('root3'));
 ReactDOM.render(<Breaker mm="50px"/>, document.getElementById('root41'));
 ReactDOM.render(<Education/>, document.getElementById('root4'));
-ReactDOM.render(<Breaker mm="20px"/>, document.getElementById('root51'));
+ReactDOM.render(<Breaker mm="50px"/>, document.getElementById('root51'));
 ReactDOM.render(<Contact/>, document.getElementById('root5'));
-ReactDOM.render(<Load />, document.getElementById('root6'));
+ReactDOM.render(<Load/>, document.getElementById('root6'));
+});
+
+
+
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

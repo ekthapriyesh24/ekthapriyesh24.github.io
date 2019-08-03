@@ -1,0 +1,60 @@
+img{
+  z-index: 1;
+}
+.test {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border-top: 1vh solid rgb(219,68,55);
+  border-right: 1vh solid rgb(228, 148, 0);
+  border-bottom: 1vh solid rgb(66,133,244);
+  border-left: 1vh solid rgb(15,157,88);
+  width: 35vh;
+  height: 35vh;
+/*  background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(white,white),
+                    linear-gradient( rgb(219,68,55) 100%,white 30%),
+                    linear-gradient( pxrgb(228, 148, 0) 100%, lightgrey 30%),
+                    linear-gradient( rgb(66,133,244) 100%, lightgrey 30%),
+                    linear-gradient( rgb(15,157,88) 100%, lightgrey 30%);
+  background-position: center center, left top, right top, left bottom, right bottom;
+  background-origin: content-box, border-box, border-box, border-box, border-box;
+  background-clip: content-box, border-box, border-box, border-box, border-box;*/
+}
+@media only screen and (max-width: 800px) {
+  .test{
+    width: 25vh;
+    height: 25vh;
+  }
+  }
+@media only screen and (max-height: 600px) {
+.test{
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+}
+.ard{
+  margin: 2px;
+  animation-name:tra;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}
+@keyframes tra
+{
+  from{  transform:translate(0px,-15px);}
+  to  {    transform:translate(0px,5px);
+      }
+}
+.arrow
+{
+  border:solid white;
+  border-width: 3px 3px 0 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(135deg);
+}
+.arrow:hover{
+  border-top-color: rgb(219,68,55);
+  border-right-color: rgb(228, 148, 0);
+}

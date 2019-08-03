@@ -1,0 +1,35 @@
+#links div>a>span{
+    font-size: 3em;
+    transition-duration: 0.2s;
+    transition-property: color,font-size;
+    color: black;
+}
+#links div>a>.fb:hover{
+    color: #3b5998;
+    font-size: 4em;
+}
+#links div>a>.lin:hover{
+    color: #0077B5;
+    font-size: 4em;
+}
+#links div>a>.ig:hover{
+    color: #3f729b;
+    font-size: 4em;
+}
+#links div>a>.qr:hover{
+    color: #a82400;
+    font-size: 4em;
+}
+#links div>a>.gh:hover{
+    color: #6e5494;
+    font-size: 4em;
+}
+#links div>a>.md:hover{
+    color: #00ab6c;
+    font-size: 4em;
+}
+#links
+{
+    justify-content: center;
+    align-items: center;
+}
