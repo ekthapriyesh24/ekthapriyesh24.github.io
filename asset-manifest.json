@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db8844fb.chunk.css",
+    "main.js": "/static/js/main.b3e7ddd1.chunk.js",
+    "main.js.map": "/static/js/main.b3e7ddd1.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.8e9a764b.chunk.css": "/static/css/2.8e9a764b.chunk.css",
+    "static/js/2.3122c697.chunk.js": "/static/js/2.3122c697.chunk.js",
+    "static/js/2.3122c697.chunk.js.map": "/static/js/2.3122c697.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.50b78d04c4f77aa3a3501528064e95de.js": "/precache-manifest.50b78d04c4f77aa3a3501528064e95de.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.8e9a764b.chunk.css.map": "/static/css/2.8e9a764b.chunk.css.map",
+    "static/css/main.db8844fb.chunk.css.map": "/static/css/main.db8844fb.chunk.css.map",
+    "static/media/index.css": "/static/media/back5.6eded0dc.jpg",
+    "static/media/cal.jpeg": "/static/media/cal.435cf0a5.jpeg",
+    "static/media/chic1.jpg": "/static/media/chic1.e4c5c4c6.jpg",
+    "static/media/mypic2.jpg": "/static/media/mypic2.da489316.jpg",
+    "static/media/react-bootstrap-carousel.css": "/static/media/react-bootstrap-carousel.f7448c04.ttf",
+    "static/media/syn.png": "/static/media/syn.807c1ea8.png"
+  }
+}
